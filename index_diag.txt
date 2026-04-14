@@ -1,0 +1,5 @@
+PRIMARY
+appointments_doctor_id_appointment_date_appointment_time_unique
+appointments_patient_id_foreign
+appointments_schedule_id_foreign
+appointments_appointment_date_appointment_time_index

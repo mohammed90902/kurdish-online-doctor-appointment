@@ -1,0 +1,2 @@
+APP: id,patient_id,doctor_id,schedule_id,appointment_date,appointment_time,status,symptoms,diagnosis,prescription,notes,created_at,updated_at
+SCHED: id,doctor_id,day_of_week,start_time,end_time,slot_duration,max_patients,is_available,created_at,updated_at

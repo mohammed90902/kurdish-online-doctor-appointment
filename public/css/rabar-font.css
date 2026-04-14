@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Rabar';
+    src: url('../fonts/rabar/Rabar_001.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rabar';
+    src: url('../fonts/rabar/Rabar_021.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Force natural rendering for Kurdish script */
+html,
+body,
+button,
+input,
+textarea,
+select,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+div,
+label,
+li {
+    font-family: 'Noto Naskh Arabic', 'Noto Sans Arabic', 'Rabar', 'Cairo', 'Inter', sans-serif !important;
+    letter-spacing: 0 !important;
+    word-spacing: normal !important;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    font-feature-settings: "kern" 1, "liga" 1, "clig" 1, "calt" 1 !important;
+    font-variant-ligatures: common-ligatures !important;
+    direction: rtl;
+}
+
+/* Fix Tailwind tracking classes breaking script joining */
+[class*="tracking-"],
+[class*="tracking-"] * {
+    letter-spacing: 0 !important;
+}
+
+/* Ensure digits look natural */
+.font-numeric {
+    font-variant-numeric: lining-nums tabular-nums;
+}
